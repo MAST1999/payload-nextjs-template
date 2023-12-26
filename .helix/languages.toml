@@ -1,0 +1,2 @@
+[language-server]
+graphql-language-service = { command = "graphql-lsp", args = ["-s", "src/payload/generated-schema.graphql", "server", "-m", "stream"] }

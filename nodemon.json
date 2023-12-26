@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "ext": "ts",
+  "exec": "tsx --inspect src/server.ts",
+  "ignore": [
+    "src/app",
+    "tailwind.config.ts"
+  ],
+  "stdin": false
+}
