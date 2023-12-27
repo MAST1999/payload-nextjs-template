@@ -52,6 +52,7 @@ COPY pnpm-lock.yaml ./
 
 COPY --from=prod-deps /home/node/app/node_modules ./node_modules
 COPY --from=builder /home/node/app/dist ./dist
+COPY --from=builder /home/node/app/.next ./.next
 COPY --from=builder /home/node/app/build ./build
 
 EXPOSE 3000
